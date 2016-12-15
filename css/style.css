@@ -18,7 +18,7 @@ body {
   font-size: 1.6rem;
   font-family: "Lato", sans-serif;
   color: #FFFFFF;
-  background-color: #848484; }
+  background-color: #6E6965; }
 
 a {
   color: #00c2ff;
@@ -31,7 +31,7 @@ Main Components
 -------------------------------- */
 .cd-horizontal-timeline {
   opacity: 0;
-  margin: 2em auto;
+  margin: 8em auto 0;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s; }
@@ -63,12 +63,12 @@ Main Components
       width: 20px; }
     .cd-horizontal-timeline .events-wrapper::before {
       left: 0;
-      background-image: -webkit-linear-gradient( left , #848484, rgba(132, 132, 132, 0));
-      background-image: linear-gradient(to right, #848484, rgba(132, 132, 132, 0)); }
+      background-image: -webkit-linear-gradient( left , #6E6965, rgba(110, 105, 101, 0));
+      background-image: linear-gradient(to right, #6E6965, rgba(110, 105, 101, 0)); }
     .cd-horizontal-timeline .events-wrapper::after {
       right: 0;
-      background-image: -webkit-linear-gradient( right , #848484, rgba(132, 132, 132, 0));
-      background-image: linear-gradient(to left, #848484, rgba(132, 132, 132, 0)); }
+      background-image: -webkit-linear-gradient( right , #6E6965, rgba(110, 105, 101, 0));
+      background-image: linear-gradient(to left, #6E6965, rgba(110, 105, 101, 0)); }
   .cd-horizontal-timeline .events {
     /* this is the grey line/timeline */
     position: absolute;
@@ -204,24 +204,21 @@ Main Components
     transform: translateY(-50%) rotate(180deg); }
   .cd-timeline-navigation a.next {
     right: 0; }
-  .no-touch .cd-timeline-navigation a:hover {
+  .cd-timeline-navigation a:hover {
     height: 40px;
     width: 28px;
     background: url(../img/cd-arrow-hover.svg) no-repeat 0 0; }
   .cd-timeline-navigation a.inactive {
     cursor: default;
-    background: none; }
+    background: url(../img/cd-arrow.svg) no-repeat 0 0;
+    opacity: 0.3; }
     .cd-timeline-navigation a.inactive::after {
-      background-position: 0 -16px;
-      background: none; }
-    .no-touch .cd-timeline-navigation a.inactive:hover {
-      border-color: #848484;
-      background: none; }
+      background-position: 0 -16px; }
 
 .cd-horizontal-timeline .events-content {
   position: relative;
   width: 100%;
-  margin: 2em 0;
+  margin: 0 0 2em 0;
   overflow: hidden;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
@@ -282,7 +279,7 @@ Main Components
   .cd-horizontal-timeline .events-content p {
     color: #FFFFFF;
     font-size: 1em;
-    font-weight: 300; }
+    font-weight: 200; }
   .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
     line-height: 1.6; }
   @media only screen and (min-width: 768px) {

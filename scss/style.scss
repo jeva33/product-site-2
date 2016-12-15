@@ -28,7 +28,7 @@ body {
 		family: $primary-font; // variables inside partials > _variables.scss
 	}
 	color: #FFFFFF;
-	background-color: #848484;
+	background-color: $color-5;
 }
 
 a {
@@ -44,7 +44,7 @@ Main Components
 
 .cd-horizontal-timeline {
 	opacity: 0;
-	margin: 2em auto;
+	margin: 8em auto 0;
 	@include transition(opacity .2s);
 
 	&::before {
@@ -210,25 +210,19 @@ Main Components
 		right: 0;
 	}
 
-	.no-touch &:hover {
+	&:hover {
 		height: 40px;
 		width: 28px;
 		background: url(../img/cd-arrow-hover.svg) no-repeat 0 0;
-
 	}
 
 	&.inactive {
 		cursor: default;
-		background: none;
+		background: url(../img/cd-arrow.svg) no-repeat 0 0;
+		opacity: 0.3;
 
 		&::after {
 			background-position: 0 -16px;
-			background: none;
-		}
-
-		.no-touch &:hover {
-			border-color: #848484;
-			background: none;
 		}
 	}
 }
@@ -236,7 +230,7 @@ Main Components
 .cd-horizontal-timeline .events-content {
 	position: relative;
 	width: 100%;
-	margin: 2em 0;
+	margin: 0 0 2em 0;
 	overflow: hidden;
 	@include transition(height .4s);
 
@@ -294,7 +288,7 @@ Main Components
 	p {
 		color: #FFFFFF;
 		font-size: 1em;
-		font-weight: 300;
+		font-weight: 200;
 	}
 
 	em, p {
