@@ -1,14 +1,16 @@
-@import 'bourbon'; // http://bourbon.io/
+@import '../bourbon/bourbon';
 
-@import '../partials/variables'; // colors, fonts etc...
+@import '../partials/variables';
 
-@import '../partials/mixins'; // custom mixins
+@import '../partials/mixins';
 
-@import '../partials/layout'; // responsive grid and media queries
+@import '../partials/layout';
 
 /* -------------------------------- 
 
 Primary style
+
+
 
 -------------------------------- */
 
@@ -25,8 +27,8 @@ body {
 		size: 1.6rem;
 		family: $primary-font; // variables inside partials > _variables.scss
 	}
-	color: $color-1;
-	background-color: $color-4;
+	color: #FFFFFF;
+	background-color: #848484;
 }
 
 a {
@@ -82,22 +84,23 @@ Main Components
 
 		&::before {
 			left: 0;
-	    	@include background-image(linear-gradient(to right,$color-4, rgba($color-4, 0)));
+	    	@include background-image(linear-gradient(to right,$color-5, rgba($color-5, 0)));
 		}
 
 		&::after {
 			right: 0;
-			@include background-image(linear-gradient(to left,$color-4, rgba($color-4, 0)));
+			@include background-image(linear-gradient(to left,$color-5, rgba($color-5, 0)));
 		}
 	}
 
 	.events {
 		/* this is the grey line/timeline */
-		position: absolute;
-		z-index: 1;
-		left: 0;
-		top: 49px;
-		height: 2px;
+	    position: absolute;
+	    z-index: 1;
+	    left: 0;
+	    top: 49px;
+	    height: 1px;
+	    background: $color-4;
 		/* width will be set using JavaScript */
 		background: darken($color-4, 10%);
 		@include transition(transform .4s);
@@ -111,35 +114,37 @@ Main Components
 		top: 0;
 		height: 100%;
 		width: 100%;
-		background-color: $color-2;
+			background-color: $color-2;
 		@include transform(scaleX(0));
 		@include transform-origin(left center);
 		@include transition(transform .3s);
 	}
 
 	.events a {
-		position: absolute;
+	    position: absolute;
 		bottom: 0;
-		z-index: 2;
-		text-align: center;
-		font-size: 1.3rem;
-		padding-bottom: 15px;
-		color: $color-1;
-		/* fix bug on Safari - text flickering while timeline translates */
+	    z-index: 2;
+	    text-align: center;
+	    font-size: 0.8em;
+	    font-weight: 300;
+	    padding-bottom: 15px;
+	    color: #FFFFFF;
 		@include transform(translateZ(0));
 
 		&::after {
 			/* this is used to create the event spot */
-			content: '';
-			position: absolute;
-			@include center(x);
-			bottom: -5px;
-			height: 12px;
-			width: 12px;
-			border-radius: 50%;
-			border: 2px solid darken($color-4, 10%);
-			background-color: $color-4;
-			@include transition(background-color .3s, border-color .3s);
+		content: '';
+	    position: absolute;
+	    left: 50%;
+	    right: auto;
+	    bottom: -6px;
+	    height: 14px;
+	    width: 14px;
+	    border-radius: 50%;
+	    border: 1px solid #c5c5c5;
+	    background-color: #FFFFFF;
+	 	@include transition(background-color .3s, border-color .3s);
+	 	@include center(x);
 		}
 
 		.no-touch &:hover::after {
@@ -174,27 +179,26 @@ Main Components
 .cd-timeline-navigation a {
 	/* these are the left/right arrows to navigate the timeline */
 	position: absolute;
-	z-index: 1;
+	z-index: 2;
 	@include center(y);
-	height: 34px;
-	width: 34px;
-	border-radius: 50%;
-	border: 2px solid darken($color-4, 10%);
-	/* replace text with an icon */
-	overflow: hidden;
-	color: transparent;
-	text-indent: 100%;
-	white-space: nowrap;
+    transform: translateY(-50%);
+    height: 40px;
+    width: 28px;
+    border-radius: 50%;
+    overflow: hidden;
+    color: transparent;
+    text-indent: 100%;
+    white-space: nowrap;
 	@include transition(border-color .3s);
-	
+	background: url(../img/cd-arrow.svg) no-repeat 0 0;
+
 	&::after {
 		/* arrow icon */
 		content: '';
 		position: absolute;
-		height: 16px;
-		width: 16px;
+		height: 40px;
+		width: 28px;
 		@include center;
-		background: url(../img/cd-arrow.svg) no-repeat 0 0;
 	}
 
 	&.prev {
@@ -207,18 +211,24 @@ Main Components
 	}
 
 	.no-touch &:hover {
-		border-color: $color-2;
+		height: 40px;
+		width: 28px;
+		background: url(../img/cd-arrow-hover.svg) no-repeat 0 0;
+
 	}
 
 	&.inactive {
-		cursor: not-allowed;
+		cursor: default;
+		background: none;
 
 		&::after {
 			background-position: 0 -16px;
+			background: none;
 		}
 
 		.no-touch &:hover {
-			border-color: darken($color-4, 10%);
+			border-color: #848484;
+			background: none;
 		}
 	}
 }
@@ -269,26 +279,22 @@ Main Components
 	}
 
 	h2 {
-		font-weight: bold;
-		font-size: 2.6rem;
-		font-family: $secondary-font;
-		font-weight: 700;
-		line-height: 1.2;
+    font-size: 3em;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    line-height: 1.2;
 	}
 
 	em {
 		display: block;
 		font-style: italic;
 		margin: 10px auto;
-
-		&::before {
-			content: '- ';
-		}
 	}
 
 	p {
-		font-size: 1.4rem;
-		color: shade($color-4, 40%);
+		color: #FFFFFF;
+		font-size: 1em;
+		font-weight: 300;
 	}
 
 	em, p {
@@ -298,7 +304,7 @@ Main Components
 	@include MQ(M) {
 
 		h2 {
-			font-size: 7rem;
+			font-size: 3em;
 		}
 
 		em {
@@ -306,7 +312,7 @@ Main Components
 		}
 
 		p {
-			font-size: 1.8rem;
+			font-size: 1em;
 		}
 	}
 	
