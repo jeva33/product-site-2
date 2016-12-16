@@ -6,9 +6,12 @@
 
 @import '../partials/layout';
 
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
+
+
+
 
 
 
@@ -36,9 +39,9 @@ a {
 	text-decoration: none;
 }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
 
@@ -168,7 +171,7 @@ Main Components
 
 	@include MQ(L) {
 		margin: 6em auto;
-		
+
 		&::before {
 			/* never visible - this is used in jQuery to check the current MQ */
 			content: 'desktop';
@@ -261,12 +264,12 @@ Main Components
 		&.enter-left,  &.leave-left {
 			@include animation-name(cd-enter-left);
 		}
-		
+
 		&.leave-right, &.leave-left {
 			@include animation-direction(reverse);
 		}
 	}
-	
+
 	li > * {
 		max-width: 800px;
 		margin: 0 auto;
@@ -309,7 +312,7 @@ Main Components
 			font-size: 1em;
 		}
 	}
-	
+
 }
 
 @include keyframes(cd-enter-right) {
