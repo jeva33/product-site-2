@@ -12,9 +12,6 @@ Primary style
 
 
 
-
-
-
 -------------------------------- */
 
 *, *::after, *::before {
@@ -44,6 +41,13 @@ a {
 Main Components
 
 -------------------------------- */
+
+#clock {
+  font-family: $primary-font;
+  font-size: 1.1em;
+  font-weight: 300;
+  display: none;
+}
 
 .cd-horizontal-timeline {
 	opacity: 0;
@@ -116,8 +120,8 @@ Main Components
 		left: 0;
 		top: 0;
 		height: 100%;
-		width: 100%;
-			background-color: $color-2;
+		width: 1%;
+		background-color: $color-2;
 		@include transform(scaleX(0));
 		@include transform-origin(left center);
 		@include transition(transform .3s);
@@ -132,6 +136,7 @@ Main Components
 	    font-weight: 300;
 	    padding-bottom: 15px;
 	    color: #FFFFFF;
+	  width: 100px;
 		@include transform(translateZ(0));
 
 		&::after {

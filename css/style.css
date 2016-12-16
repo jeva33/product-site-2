@@ -1,7 +1,7 @@
 /*// colors*/
 /*// fonts 
 */
-/* -------------------------------- 
+/* --------------------------------
 
 Primary style
 
@@ -24,11 +24,17 @@ a {
   color: #00c2ff;
   text-decoration: none; }
 
-/* -------------------------------- 
+/* --------------------------------
 
-Main Components 
+Main Components
 
 -------------------------------- */
+#clock {
+  font-family: "Lato", sans-serif;
+  font-size: 1.1em;
+  font-weight: 300;
+  display: none; }
+
 .cd-horizontal-timeline {
   opacity: 0;
   margin: 8em auto 0;
@@ -89,7 +95,7 @@ Main Components
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
+    width: 1%;
     background-color: #00c2ff;
     -webkit-transform: scaleX(0);
     -moz-transform: scaleX(0);
@@ -113,6 +119,7 @@ Main Components
     font-weight: 300;
     padding-bottom: 15px;
     color: #FFFFFF;
+    width: 100px;
     -webkit-transform: translateZ(0);
     -moz-transform: translateZ(0);
     -ms-transform: translateZ(0);
