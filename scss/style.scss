@@ -6,7 +6,7 @@
 
 @import '../partials/layout';
 
-@import '../css/navera_p1';
+@import '../css/navera_p1.css';
 
 /* --------------------------------
 
@@ -224,6 +224,12 @@ Main Components
 		height: 40px;
 		width: 28px;
 		background: url(../img/cd-arrow-hover.svg) no-repeat 0 0;
+
+		-o-transition:.5s;
+        -ms-transition:.5s;
+        -moz-transition:.5s;
+        -webkit-transition:.5s;
+	    transition:.5s;
 	}
 
 	&.inactive {
@@ -279,8 +285,8 @@ Main Components
 
 	li > * {
 		max-width: 800px;
-		margin: 0 auto;
-	}
+/*		margin: 0 auto;
+*/	}
 
 	h2 {
     font-size: 3em;

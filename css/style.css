@@ -1,6 +1,7 @@
 /*// colors*/
 /*// fonts 
 */
+@import url(../css/navera_p1.css);
 /* --------------------------------
 
 Primary style
@@ -214,7 +215,12 @@ Main Components
   .cd-timeline-navigation a:hover {
     height: 40px;
     width: 28px;
-    background: url(../img/cd-arrow-hover.svg) no-repeat 0 0; }
+    background: url(../img/cd-arrow-hover.svg) no-repeat 0 0;
+    -o-transition: .5s;
+    -ms-transition: .5s;
+    -moz-transition: .5s;
+    -webkit-transition: .5s;
+    transition: .5s; }
   .cd-timeline-navigation a.inactive {
     cursor: default;
     background: url(../img/cd-arrow.svg) no-repeat 0 0;
@@ -273,7 +279,8 @@ Main Components
       animation-direction: reverse; }
   .cd-horizontal-timeline .events-content li > * {
     max-width: 800px;
-    margin: 0 auto; }
+    /*		margin: 0 auto;
+    */ }
   .cd-horizontal-timeline .events-content h2 {
     font-size: 3em;
     font-family: "Lato", sans-serif;
