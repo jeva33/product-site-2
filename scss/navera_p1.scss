@@ -12,7 +12,7 @@
 	width: auto;
 }
 
-a.drill-down-arrow {
+.drill-down-arrow {
     background-image: url(../img/vert-arrow-static.svg);
     background-position: 0 2px;
     background-repeat: no-repeat;
@@ -24,7 +24,7 @@ a.drill-down-arrow {
     width: 100%;
 }
 
-a.drill-down-arrow:hover {
+.drill-down-arrow:hover {
     background-image: url(../img/vert-arrow-hover.svg);
     background-position: 0 2px;
     background-repeat: no-repeat;
@@ -35,7 +35,7 @@ a.drill-down-arrow:hover {
     width: 100%;
 }
 
-a.arrow-close-icon {
+.arrow-close-icon {
     background-image: url(../img/vert-arrow-close.svg);
     background-position: 0px -6px;
     background-repeat: no-repeat;
