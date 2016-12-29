@@ -1,0 +1,54 @@
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,900|Fira+Sans:400,400italic' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet" type='text/css'>
+
+		<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+		<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+
+		<script
+			src="https://code.jquery.com/jquery-3.1.1.js"
+			integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+			crossorigin="anonymous"></script>
+		<script src="js/modernizr.js"></script>
+
+		<script>
+			$(document).ready( function() {
+				$('.drill-down-arrow', this).click(function() {
+		
+				var isChecked = $(event.target).is('.drill-down-arrow');
+		    		if(isChecked) { 
+		        		$('.section-content', this).slideToggle('fast');
+		        		$(this).removeClass('drill-down-arrow').addClass('arrow-close-icon');
+		    		} 
+		    		else {
+		    			$('.section-content', this).slideToggle();
+		        		$(this).removeClass('arrow-close-icon').addClass('drill-down-arrow');
+		    		}
+				})
+
+			});	
+		</script>
+
+		<title>JON EVA | Product Designer</title>
+	</head>
+
+	<body>
+		
+		<div class="drill-down-arrow">
+			<div class="section" id="part-one">
+				<div class="section-content"></div>
+			</div>
+		</div>
+
+		<div class="drill-down-arrow">
+			<div class="section" id="part-one">
+				<div class="section-content"></div>
+			</div>
+		</div>
+
+	</body>
+</html>
