@@ -1,5 +1,6 @@
 iframe {
     width: 100%;
+    display: block;
 }
 
 .project-description {
@@ -15,16 +16,15 @@ h2.section-title {
 
 .section {
     float: left;
-/*    height: 100%;
-*/    margin-top: 20px;
     width: 100%;
+    margin: 14px 0 16px 0;
+
 }
 
 .section-content {
-    background: pink;
     display: none;
-    height: 200px;
-	width: auto;
+    height: auto;
+    width: 100%;
 }
 
 .drill-down-arrow {
@@ -34,10 +34,9 @@ h2.section-title {
     background-size: 22px 14px;
     display: block;
     float: left;
-    margin-top: 20px;
-    position: relative;
+/*    margin-top: 20px;
+*/    position: relative;
     width: 100%;
-
 }
 
 .drill-down-arrow:hover {
@@ -46,8 +45,8 @@ h2.section-title {
     background-repeat: no-repeat;
     background-size: 22px 14px;
     display: block;
-    margin-top: 20px;
-    position: relative;
+/*    margin-top: 20px;
+*/    position: relative;
     width: 100%;
 
     -o-transition: .5s;
@@ -64,7 +63,12 @@ h2.section-title {
     background-size: 22px 30px;
     display: block;
     float: left;
-    margin-top: 20px;
-    position: relative;
+/*    margin-top: 20px;
+*/    position: relative;
     width: 100%;
+}
+
+img {
+    width: 100%;
+    height: auto;
 }

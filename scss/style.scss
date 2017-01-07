@@ -71,7 +71,7 @@ Main Components
 		position: relative;
 		height: 100px;
 		width: 90%;
-		max-width: 800px;
+		max-width: 700px;
 		margin: 0 auto;
 	}
 
@@ -284,9 +284,9 @@ Main Components
 	}
 
 	li > * {
-		max-width: 800px;
-/*		margin: 0 auto;
-*/	}
+		max-width: 700px;
+		margin: 0 auto;
+	}
 
 	h2 {
     font-size: 3em;
@@ -305,6 +305,10 @@ Main Components
 		color: #FFFFFF;
 		font-size: 1em;
 		font-weight: 200;
+	}
+
+	p.project-description {
+		margin-bottom: 50px;
 	}
 
 	em, p {

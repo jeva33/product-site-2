@@ -53,7 +53,7 @@ Main Components
     position: relative;
     height: 100px;
     width: 90%;
-    max-width: 800px;
+    max-width: 700px;
     margin: 0 auto; }
   .cd-horizontal-timeline .events-wrapper {
     position: relative;
@@ -278,9 +278,8 @@ Main Components
       -moz-animation-direction: reverse;
       animation-direction: reverse; }
   .cd-horizontal-timeline .events-content li > * {
-    max-width: 800px;
-    /*		margin: 0 auto;
-    */ }
+    max-width: 700px;
+    margin: 0 auto; }
   .cd-horizontal-timeline .events-content h2 {
     font-size: 3em;
     font-family: "Lato", sans-serif;
@@ -294,6 +293,8 @@ Main Components
     color: #FFFFFF;
     font-size: 1em;
     font-weight: 200; }
+  .cd-horizontal-timeline .events-content p.project-description {
+    margin-bottom: 50px; }
   .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
     line-height: 1.6; }
   @media only screen and (min-width: 768px) {
