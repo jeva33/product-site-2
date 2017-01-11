@@ -2,6 +2,7 @@
 /*// fonts 
 */
 @import url(../css/navera_p1.css);
+@import url(../css/main.css);
 /* --------------------------------
 
 Primary style
@@ -38,7 +39,7 @@ Main Components
 
 .cd-horizontal-timeline {
   opacity: 0;
-  margin: 8em auto 0;
+  margin: 1em auto 0;
   -webkit-transition: opacity 0.2s;
   -moz-transition: opacity 0.2s;
   transition: opacity 0.2s; }
@@ -54,28 +55,31 @@ Main Components
     height: 100px;
     width: 90%;
     max-width: 700px;
-    margin: 0 auto; }
+    margin: 0 auto;
+    top: -106px; }
   .cd-horizontal-timeline .events-wrapper {
     position: relative;
     height: 100%;
     margin: 0 40px;
-    overflow: hidden; }
-    .cd-horizontal-timeline .events-wrapper::after, .cd-horizontal-timeline .events-wrapper::before {
-      /* these are used to create a shadow effect at the sides of the timeline */
-      content: '';
-      position: absolute;
-      z-index: 2;
-      top: 0;
-      height: 100%;
-      width: 20px; }
-    .cd-horizontal-timeline .events-wrapper::before {
-      left: 0;
-      background-image: -webkit-linear-gradient( left , #6E6965, rgba(110, 105, 101, 0));
-      background-image: linear-gradient(to right, #6E6965, rgba(110, 105, 101, 0)); }
-    .cd-horizontal-timeline .events-wrapper::after {
-      right: 0;
-      background-image: -webkit-linear-gradient( right , #6E6965, rgba(110, 105, 101, 0));
-      background-image: linear-gradient(to left, #6E6965, rgba(110, 105, 101, 0)); }
+    overflow: hidden;
+    /*		&::after, &::before {
+    			/* these are used to create a shadow effect at the sides of the timeline */
+    /*			content: '';
+    			position: absolute;
+    			z-index: 2;
+    			top: 0;
+    			height: 100%;
+    			width: 20px;*/
+    /*		}*/
+    /*		&::before {
+    			left: 0;
+    	    	background: linear-gradient(to right, black, rgba(0,0,0,0));
+    		}
+    
+    		&::after {
+    			right: 0;
+    			background: linear-gradient(to left, black, rgba(0,0,0,0));
+    		}*/ }
   .cd-horizontal-timeline .events {
     /* this is the grey line/timeline */
     position: absolute;
@@ -83,9 +87,8 @@ Main Components
     left: 0;
     top: 49px;
     height: 1px;
-    background: #c5c5c5;
+    background: #FFFFFF;
     /* width will be set using JavaScript */
-    background: #acacac;
     -webkit-transition: -webkit-transform 0.4s;
     -moz-transition: -moz-transform 0.4s;
     transition: transform 0.4s; }
@@ -136,7 +139,7 @@ Main Components
       height: 14px;
       width: 14px;
       border-radius: 50%;
-      border: 1px solid #c5c5c5;
+      border: 1px solid #FFFFFF;
       background-color: #FFFFFF;
       -webkit-transition: background-color 0.3s, border-color 0.3s;
       -moz-transition: background-color 0.3s, border-color 0.3s;
@@ -158,9 +161,10 @@ Main Components
         border-color: #00c2ff; }
     .cd-horizontal-timeline .events a.older-event::after {
       border-color: #00c2ff; }
-  @media only screen and (min-width: 1100px) {
+  @media only screen and (min-width: 2000px) {
     .cd-horizontal-timeline {
-      margin: 6em auto; }
+      /*		margin: 6em auto;
+      */ }
       .cd-horizontal-timeline::before {
         /* never visible - this is used in jQuery to check the current MQ */
         content: 'desktop'; } }
@@ -228,10 +232,17 @@ Main Components
     .cd-timeline-navigation a.inactive::after {
       background-position: 0 -16px; }
 
+.events-content {
+  top: -90px; }
+
+.cd-horizontal-timeline {
+  top: 0; }
+
 .cd-horizontal-timeline .events-content {
   position: relative;
   width: 100%;
-  margin: 0 0 2em 0;
+  /*	margin: 0 0 2em 0;
+  */
   overflow: hidden;
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
@@ -241,7 +252,6 @@ Main Components
     z-index: 1;
     width: 100%;
     left: 0;
-    top: 0;
     -webkit-transform: translateX(-100%);
     -moz-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
@@ -281,7 +291,7 @@ Main Components
     max-width: 700px;
     margin: 0 auto; }
   .cd-horizontal-timeline .events-content h2 {
-    font-size: 3em;
+    font-size: 2em;
     font-family: "Lato", sans-serif;
     font-weight: 300;
     line-height: 1.2; }
@@ -294,12 +304,12 @@ Main Components
     font-size: 1em;
     font-weight: 200; }
   .cd-horizontal-timeline .events-content p.project-description {
-    margin-bottom: 50px; }
+    margin-bottom: 30px; }
   .cd-horizontal-timeline .events-content em, .cd-horizontal-timeline .events-content p {
     line-height: 1.6; }
   @media only screen and (min-width: 768px) {
     .cd-horizontal-timeline .events-content h2 {
-      font-size: 3em; }
+      font-size: 2.5em; }
     .cd-horizontal-timeline .events-content em {
       font-size: 2rem; }
     .cd-horizontal-timeline .events-content p {
