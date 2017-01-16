@@ -3,6 +3,9 @@ div#gradient-fade {
   height: 150px;
   position: absolute;
   width: 100%;
+  bottom: 0;
+  opacity: 0.2;
+  z-index: 1;
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.6+100 */
   background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
   /* FF3.6-15 */
@@ -12,6 +15,15 @@ div#gradient-fade {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 );
   /* IE6-9 */ }
+
+div#background-area {
+  height: 150px;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  opacity: 0.2;
+  background: rgba(82, 79, 76, 0.7); }
 
 img.background-paper-texture {
   position: relative;
@@ -24,7 +36,7 @@ div#home-button {
   height: 150px;
   width: auto;
   margin: 0 auto;
-  background-color: #6E6965;
+  position: relative;
   -webkit-transition: background-color 15s ease-in-out;
   -moz-transition: background-color 15s ease-in-out;
   -o-transition: background-color 15s ease-in-out;
@@ -36,7 +48,8 @@ div#home-button {
     font-weight: 600;
     position: absolute;
     margin: -0.2em 0 0 0.1em;
-    white-space: nowrap; }
+    white-space: nowrap;
+    z-index: 3; }
   div#home-button #home-name {
     color: #FFFFFF; }
 

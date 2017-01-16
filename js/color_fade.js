@@ -15,7 +15,7 @@ $(document).ready( function() {
                 }, time);
         }
         $(window).load(function () {
-            changeColor("#home-button", ["#e6008d", "#18b7f5", "#8add06"], 15000);
+            changeColor("#home-button", ["#8add06", "#18b7f5", "#e6008d"], 8000);
         });
     });
 
