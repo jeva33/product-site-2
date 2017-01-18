@@ -5,16 +5,18 @@
   color: #FFFFFF;
   font-family: "Lato", sans-serif;
   font-weight: 100;
-  padding: 16px;
   position: relative;
   right: 8px; }
   .login-area h3 {
     color: #FFFFFF;
     font-family: "Lato", sans-serif;
-    font-size: 16px; }
+    font-size: 1em;
+    font-weight: 300; }
 
 form {
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  color: #383838;
+  padding: 16px; }
   form input {
     outline: none; }
 

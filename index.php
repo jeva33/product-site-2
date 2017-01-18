@@ -9,6 +9,7 @@
 
 	<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
 	<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+	<link rel="stylesheet" href="css/login.css">
 
 	<script
 			src="https://code.jquery.com/jquery-3.1.1.js"
