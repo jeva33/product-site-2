@@ -76,7 +76,7 @@
 					The National Football League is the only professional sports league that designates a neutral site for the championship game. Tampa Bay, a leading US seaport, has rich Spanish architecture and once had a reputation as the "cigar capital of the world." The Super Bowl 35 logo, marked with traditional Roman numerals, successfully evokes the NFL's legacy and Tampa Bay's personality.
 				</p>
 
-				<iframe src="sb.html" scrolling="no" frameborder="0" height="2000"></iframe>
+				<iframe src="sb.php" scrolling="no" frameborder="0" height="2000"></iframe>
 
 			</li>
 
