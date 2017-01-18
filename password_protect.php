@@ -105,7 +105,7 @@ function showLoginPasswordProtect($error_msg) {
   <style>
     input { border: 1px solid black; }
   </style>
-  <div style="width:500px; margin-left:auto; margin-right:auto; text-align:center">
+  <div>
   <form method="post">
     <h3>Please enter password to access this page</h3>
     <font color="red"><?php echo $error_msg; ?></font><br />
