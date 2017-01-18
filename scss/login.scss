@@ -3,20 +3,17 @@
 
 //////////////////////////////////////
 
-
-
-h3 {
-  color: #FFFFFF;
-  font-family: $primary-font;
-  font-size: 16px;
-  position: relative;
-  right: 8px;
-}
-
-form {
+.login-area {
   background-color: #FFFFFF;
   font-family: $primary-font;
   padding: 16px;
   position: relative;
   right: 8px;
+
+  h3 {
+  color: #FFFFFF;
+  font-family: $primary-font;
+  font-size: 16px;
+  }
 }
+
