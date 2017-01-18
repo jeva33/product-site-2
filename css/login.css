@@ -3,7 +3,10 @@
 */
 form {
   background-color: #FFFFFF;
-  font-family: "Lato", sans-serif; }
+  font-family: "Lato", sans-serif;
+  padding: 16px;
+  position: relative;
+  right: 8px; }
   form h3 {
     color: #FFFFFF;
     font-size: 16px; }
