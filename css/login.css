@@ -2,8 +2,10 @@
 /*// fonts 
 */
 form {
+  background-color: #FFFFFF;
   font-family: "Lato", sans-serif; }
   form h3 {
-    color: #FFFFFF; }
+    color: #FFFFFF;
+    font-size: 16px; }
 
 /*# sourceMappingURL=login.css.map */
