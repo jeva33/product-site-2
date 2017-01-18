@@ -18,6 +18,16 @@ form {
   color: #383838;
   padding: 16px; }
   form input {
-    outline: none; }
+    border-radius: 4px;
+    border: 1px solid #b1b1b1;
+    font-size: 18px;
+    font-weight: 100;
+    float: left;
+    outline: none;
+    padding: 6px; }
+  form span.login-text {
+    font-size: 12px;
+    margin: 0 0 6px 0;
+    display: block; }
 
 /*# sourceMappingURL=login.css.map */
