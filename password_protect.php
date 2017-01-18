@@ -96,24 +96,22 @@ if(!function_exists('showLoginPasswordProtect')) {
 function showLoginPasswordProtect($error_msg) {
 ?>
 <html>
-<head>
-  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
-  <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
-  <link rel="stylesheet" href="css/login.css">
-</head>
-<body>
-  <style>
-    input { border: 1px solid black; }
-  </style>
-  <div>
-  <h3>Please enter password to access this page</h3>
-  <form method="post">
-    <font color="red"><?php echo $error_msg; ?></font><br />
-    <?php if (USE_USERNAME) echo 'Login<br /><input type="input" name="access_login" /><br />Password<br />'; ?>
-    <input type="password" name="access_password" /><p></p><input type="submit" name="Submit" value="Submit" />
-  </form>
-  </div>
-</body>
+  <head>
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+    <META HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE">
+    <link rel="stylesheet" href="css/login.css">
+  </head>
+
+  <body>
+    <div class="login-area">
+    <h3>Please enter password to access this page</h3>
+    <form method="post">
+      <font color="red"><?php echo $error_msg; ?></font><br />
+      <?php if (USE_USERNAME) echo 'Login<br /><input type="input" name="access_login" /><br />Password<br />'; ?>
+      <input type="password" name="access_password" /><p></p><input type="submit" name="Submit" value="Submit" />
+    </form>
+    </div>
+  </body>
 </html>
 
 <?php
