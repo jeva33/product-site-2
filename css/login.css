@@ -4,6 +4,7 @@
 .login-area {
   color: #FFFFFF;
   font-family: "Lato", sans-serif;
+  font-weight: 100;
   padding: 16px;
   position: relative;
   right: 8px; }
@@ -11,5 +12,10 @@
     color: #FFFFFF;
     font-family: "Lato", sans-serif;
     font-size: 16px; }
+
+form {
+  background-color: #FFFFFF; }
+  form input {
+    outline: none; }
 
 /*# sourceMappingURL=login.css.map */

@@ -105,11 +105,11 @@ function showLoginPasswordProtect($error_msg) {
   <body>
     <div class="login-area">
     <h3>Please enter password to access this page</h3>
-    <form method="post">
-      <font color="red"><?php echo $error_msg; ?></font><br />
-      <?php if (USE_USERNAME) echo 'Login<br /><input type="input" name="access_login" /><br />Password<br />'; ?>
-      <input type="password" name="access_password" /><p></p><input type="submit" name="Submit" value="Submit" />
-    </form>
+      <form method="post">
+        <font color="red"><?php echo $error_msg; ?></font><br />
+        <?php if (USE_USERNAME) echo 'Login<br /><input type="input" name="access_login" class="login"/><br />Password<br />'; ?>
+        <input type="password" name="access_password" class="password"/><input type="submit" name="Submit"  value="Submit" class="submit-button"/>
+      </form>
     </div>
   </body>
 </html>

@@ -25,12 +25,12 @@
 <body>
 
 	<div id="home-button">
-        <h1 id="home-name">JON EVA</h1>
+    <h1 id="home-name">JON EVA</h1>
 		<div id="gradient-fade"></div>
 		<div id="background-area"></div>
-    </div>
+  </div>
 
-<section class="cd-horizontal-timeline">
+	<section class="cd-horizontal-timeline">
     	<div class="timeline">
 		<div class="events-wrapper">
 			<div class="events">

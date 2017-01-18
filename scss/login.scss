@@ -6,6 +6,7 @@
 .login-area {
   color: #FFFFFF;
   font-family: $primary-font;
+  font-weight: 100;
   padding: 16px;
   position: relative;
   right: 8px;
@@ -17,3 +18,10 @@
   }
 }
 
+form {
+  background-color: #FFFFFF;
+
+  input {
+    outline: none;
+  }
+}
