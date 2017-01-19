@@ -2,8 +2,9 @@
 /*// fonts 
 */
 h3 {
-  background-color: #FFFFFF;
-  color: #383838;
+  color: #FFFFFF;
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
   padding: 16px;
   display: table;
   width: 100%;
