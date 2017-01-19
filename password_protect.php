@@ -106,9 +106,9 @@ function showLoginPasswordProtect($error_msg) {
   </head>
 
   <body>
+    <div class="drill-down-arrow"></div>
     <h3>Please enter password to access this page</h3>
     <div class="login-area">
-      <div class="drill-down-arrow"></div>
       <form method="post">
         <?php if (USE_USERNAME) echo '<div class="form-bit"><span class="login-text">Login</span><input type="input" name="access_login" class="field"/></div><div class="form-bit"><span class="login-text">Password</span>'; ?>
         <input type="password" name="access_password" class="field"/></div><input type="submit" name="Submit"  value="Submit" class="submit-button"/>

@@ -6,7 +6,8 @@
 h3 {
     color: #FFFFFF;
     font-family: $primary-font;
-    font-weight: 100;
+    font-size: 1em;
+    font-weight: 300;
     padding: 16px;
     display: table;
     width: 100%;
@@ -59,10 +60,13 @@ input.submit-button {
     color: #FFFFFF;
     padding: 11px 22px;
     display: block;
+    font-family: $primary-font;
+    font-weight: 300;
     float: left;
     margin-bottom: 28px;
     position: relative;
     width: 210px;
+    outline: none;
 }
 
 .arrow-close-icon {
