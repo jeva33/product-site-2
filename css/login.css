@@ -9,12 +9,14 @@ h3 {
   padding: 16px;
   display: table;
   width: 100%;
-  margin: auto; }
+  margin: auto;
+  position: relative;
+  right: 25px; }
 
 .login-area {
   color: #FFFFFF;
   font-family: "Lato", sans-serif;
-  font-weight: 100;
+  font-weight: 300;
   position: relative;
   right: 8px; }
 
@@ -35,7 +37,8 @@ form {
     font-weight: 100;
     outline: none;
     padding: 6px;
-    width: 210px; }
+    width: 210px;
+    color: #666666; }
   form span.login-text {
     font-size: 12px;
     margin: 0 0 6px 0;
@@ -57,6 +60,16 @@ input.submit-button {
   width: 210px;
   outline: none; }
 
+.drill-down-arrow {
+  background-image: url(../img/vert-arrow-static.svg);
+  background-position: 0 2px;
+  background-repeat: no-repeat;
+  background-size: 22px 14px;
+  display: block;
+  float: left;
+  position: relative;
+  width: 100%; }
+
 .arrow-close-icon {
   background-image: url(../img/vert-arrow-close.svg);
   background-position: 0px -6px;
@@ -66,5 +79,9 @@ input.submit-button {
   float: left;
   position: relative;
   width: 100%; }
+
+.error {
+  color: red;
+  font-weight: 300; }
 
 /*# sourceMappingURL=login.css.map */

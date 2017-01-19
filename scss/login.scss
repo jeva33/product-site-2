@@ -12,12 +12,14 @@ h3 {
     display: table;
     width: 100%;
     margin: auto;
+    position: relative;
+    right: 25px;
 }
 
 .login-area {
     color: #FFFFFF;
     font-family: $primary-font;
-    font-weight: 100;
+    font-weight: 300;
     position: relative;
     right: 8px;
 }
@@ -43,6 +45,7 @@ form {
     outline: none;
     padding: 6px;
     width: 210px;
+    color: #666666;
   }
 
   span.login-text {
@@ -69,6 +72,17 @@ input.submit-button {
     outline: none;
 }
 
+.drill-down-arrow {
+    background-image: url(../img/vert-arrow-static.svg);
+    background-position: 0 2px;
+    background-repeat: no-repeat;
+    background-size: 22px 14px;
+    display: block;
+    float: left;
+    position: relative;
+    width: 100%;
+}
+
 .arrow-close-icon {
     background-image: url(../img/vert-arrow-close.svg);
     background-position: 0px -6px;
@@ -78,4 +92,9 @@ input.submit-button {
     float: left;
     position: relative;
     width: 100%;
+}
+
+.error {
+  color: red;
+  font-weight: 300;
 }

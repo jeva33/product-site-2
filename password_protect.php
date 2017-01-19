@@ -57,7 +57,8 @@ $LOGIN_INFORMATION = array(
 define('USE_USERNAME', true);
 
 // User will be redirected to this page after logout
-define('LOGOUT_URL', 'http://www.example.com/');
+define('LOGOUT_URL', 'https://www.linkedin.com/in/jonathaneva
+');
 
 // time out after NN minutes of inactivity. Set to 0 to not timeout
 define('TIMEOUT_MINUTES', 30);
@@ -107,12 +108,13 @@ function showLoginPasswordProtect($error_msg) {
 
   <body>
     <div class="drill-down-arrow"></div>
-    <h3>Please enter password to access this page</h3>
+    <h3>Process (this section is password protected, <a href="https://www.linkedin.com/in/jonathaneva
+">just ask!</a>)</h3>
     <div class="login-area">
       <form method="post">
         <?php if (USE_USERNAME) echo '<div class="form-bit"><span class="login-text">Login</span><input type="input" name="access_login" class="field"/></div><div class="form-bit"><span class="login-text">Password</span>'; ?>
         <input type="password" name="access_password" class="field"/></div><input type="submit" name="Submit"  value="Submit" class="submit-button"/>
-        <font color="red"><?php echo $error_msg; ?></font>
+        <font class="error" color="red"><?php echo $error_msg; ?></font>
       </form>
     </div>
   </body>
@@ -132,7 +134,7 @@ if (isset($_POST['access_password'])) {
   if (!USE_USERNAME && !in_array($pass, $LOGIN_INFORMATION)
   || (USE_USERNAME && ( !array_key_exists($login, $LOGIN_INFORMATION) || $LOGIN_INFORMATION[$login] != $pass ) )
   ) {
-    showLoginPasswordProtect("Incorrect password.");
+    showLoginPasswordProtect("Sorry, that wasn't it! Try again or ask again!");
   }
   else {
     // set cookie if password was validated
