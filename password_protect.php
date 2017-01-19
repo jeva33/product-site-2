@@ -109,7 +109,7 @@ function showLoginPasswordProtect($error_msg) {
   <body>
     <div class="drill-down-arrow"></div>
     <h3>Process (this section is password protected, <a href="https://www.linkedin.com/in/jonathaneva
-">just ask!</a>)</h3>
+">just ask me!</a>)</h3>
     <div class="login-area">
       <form method="post">
         <?php if (USE_USERNAME) echo '<div class="form-bit"><span class="login-text">Login</span><input type="input" name="access_login" class="field"/></div><div class="form-bit"><span class="login-text">Password</span>'; ?>

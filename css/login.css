@@ -12,6 +12,9 @@ h3 {
   margin: auto;
   position: relative;
   right: 25px; }
+  h3 a {
+    text-decoration: none;
+    color: #00c2ff; }
 
 .login-area {
   color: #FFFFFF;

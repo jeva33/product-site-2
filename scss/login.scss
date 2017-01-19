@@ -4,16 +4,21 @@
 //////////////////////////////////////
 
 h3 {
-    color: #FFFFFF;
-    font-family: $primary-font;
-    font-size: 1em;
-    font-weight: 300;
-    padding: 16px;
-    display: table;
-    width: 100%;
-    margin: auto;
-    position: relative;
-    right: 25px;
+  color: #FFFFFF;
+  font-family: $primary-font;
+  font-size: 1em;
+  font-weight: 300;
+  padding: 16px;
+  display: table;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  right: 25px;
+
+  a {
+    text-decoration: none;
+    color: #00c2ff;
+  }
 }
 
 .login-area {
