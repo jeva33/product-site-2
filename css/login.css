@@ -1,37 +1,64 @@
 /*// colors*/
 /*// fonts
 */
+@import url(../css/protected.css);
+/*//////////////////////////////////////*/
+iframe {
+  width: 100%;
+  display: block; }
+
+.case-title-login {
+  font-weight: 300;
+  font-size: 20px;
+  margin: 26px 0 30px 0;
+  color: #000000;
+  border-bottom: 1px solid #d4d4d4;
+  padding-bottom: 6px; }
+
+.section-content {
+  -webkit-transition: opacity 2s ease-in;
+  -moz-transition: opacity 2s ease-in;
+  -o-transition: opacity 2s ease-in;
+  -ms-transition: opacity 2s ease-in;
+  transition: opacity 2s ease-in; }
+
 h3 {
-  color: #FFFFFF;
+  display: inline-block;
   font-family: "Lato", sans-serif;
   font-size: 1em;
   font-weight: 300;
-  padding: 16px;
-  display: table;
-  width: 100%;
-  margin: auto;
-  position: relative;
-  right: 25px; }
+  float: left;
+  margin: 12px 0;
+  line-height: 16px; }
   h3 a {
     text-decoration: none;
-    color: #00c2ff; }
+    color: #F4512C; }
+
+.ask-message {
+  font-size: 0.8em;
+  font-family: "Lato", sans-serif;
+  font-weight: 300; }
+  .ask-message a {
+    text-decoration: none;
+    color: #F4512C; }
 
 .login-area {
-  color: #FFFFFF;
   font-family: "Lato", sans-serif;
   font-weight: 300;
   position: relative;
-  right: 8px; }
+  display: inline-block;
+  margin: 0 0 10px;
+  width: 100%; }
+
+.white-wrapper {
+  width: 100%;
+  display: inherit;
+  position: absolute; }
 
 form {
-  background-color: #FFFFFF;
   color: #383838;
-  padding: 22px;
-  display: inline-block;
-  width: 100%; }
-  form .form-bit {
-    float: left;
-    margin-right: 12px; }
+  padding: 32px 40px 22px;
+  margin: auto; }
   form .field {
     border-radius: 4px;
     border: 1px solid #b1b1b1;
@@ -40,48 +67,39 @@ form {
     font-weight: 100;
     outline: none;
     padding: 6px;
-    width: 210px;
-    color: #666666; }
+    width: 100%;
+    color: #383838;
+    margin-bottom: 12px; }
   form span.login-text {
-    font-size: 12px;
+    font-size: 13px;
     margin: 0 0 6px 0;
-    display: block; }
+    display: block;
+    color: #fff; }
+
+.form-bit {
+  width: 100%;
+  float: none;
+  padding-right: 0; }
+
+.form-bit-submit {
+  width: 100%;
+  float: none; }
 
 input.submit-button {
-  bottom: -20px;
-  background-color: #00c2ff;
+  bottom: -14px;
+  background-color: #F4512C;
   border: none;
   border-radius: 4px;
   color: #FFFFFF;
-  padding: 11px 22px;
+  cursor: pointer;
+  padding: 10px 26px;
   display: block;
   font-family: "Lato", sans-serif;
-  font-weight: 300;
-  float: left;
+  font-weight: 400;
   margin-bottom: 28px;
   position: relative;
-  width: 210px;
-  outline: none; }
-
-.drill-down-arrow {
-  background-image: url(../img/vert-arrow-static.svg);
-  background-position: 0 2px;
-  background-repeat: no-repeat;
-  background-size: 22px 14px;
-  display: block;
-  float: left;
-  position: relative;
-  width: 100%; }
-
-.arrow-close-icon {
-  background-image: url(../img/vert-arrow-close.svg);
-  background-position: 0px -6px;
-  background-repeat: no-repeat;
-  background-size: 22px 30px;
-  display: block;
-  float: left;
-  position: relative;
-  width: 100%; }
+  outline: none;
+  font-size: 12px; }
 
 .error {
   color: red;
