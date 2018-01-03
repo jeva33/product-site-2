@@ -1,59 +1,19 @@
-/* Home button */
-div#gradient-fade {
-  height: 150px;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  opacity: 0.2;
-  z-index: 1;
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0+0,0.6+100 */
-  background: -moz-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-  /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-  /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.6) 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#99000000',GradientType=0 );
-  /* IE6-9 */ }
-
-div#background-area {
-  height: 150px;
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  z-index: 2;
-  opacity: 0.2;
-  background: rgba(82, 79, 76, 0.7); }
-
-img.background-paper-texture {
-  position: relative;
-  left: -6%;
-  width: 112%;
-  height: auto;
-  bottom: 0; }
-
-div#home-button {
-  height: 150px;
-  width: auto;
-  margin: 0 auto;
-  position: relative;
-  -webkit-transition: background-color 15s ease-in-out;
-  -moz-transition: background-color 15s ease-in-out;
-  -o-transition: background-color 15s ease-in-out;
-  -khtml-transition: background-color 15s ease-in-out;
-  transition: background-color 15s ease-in-out; }
-  div#home-button h1 {
+/*#home-name {
+    color: #383838; 
     font-family: 'Lato', sans-serif;
-    font-size: 5.5em;
+    font-size: 8em;
     font-weight: 600;
-    position: absolute;
+    letter-spacing: -1px;
     margin: -0.2em 0 0 0.1em;
+    position: relative;
     white-space: nowrap;
-    z-index: 3; }
-  div#home-button #home-name {
-    color: #FFFFFF; }
+    z-index: 200;
 
-p.jon-description {
-  margin-bottom: -150px; }
+    -webkit-transition: color 15s ease-in-out;
+    -moz-transition: color 15s ease-in-out;
+    -o-transition: color 15s ease-in-out;
+    -khtml-transition: color 15s ease-in-out;
+    transition: color 15s ease-in-out;
+}*/
 
 /*# sourceMappingURL=main.css.map */
